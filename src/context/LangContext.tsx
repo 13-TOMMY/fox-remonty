@@ -1,8 +1,16 @@
 import React, { useState, createContext, useEffect } from "react";
 
-export const LangContext = createContext();
+interface LangContextProviderProps {
+  lang: boolean;
+}
+interface LangContextValue { 
+  language: string;
+  toggleLanguage: () => void;
+}
 
-export default function LangContextProvider({ lang }) {
+export const LangContext = createContext <LangContextValue | undefined>(undefined);
+
+export default function LangContextProvider({ lang } : LangContextProviderProps) {
   const [language, setLanguage] = useState("eng");
 
   useEffect(() => {
