@@ -1,0 +1,11 @@
+@import "./variables";
+@import "./mixins";
+@import "./reset";
+
+// Import component-specific Sass files
+@import './components/header.sass';
+@import './components/footer.sass';
+
+// Import page-specific Sass files
+@import './pages/homepage.scss';
+@import './pages/projects.scss';
