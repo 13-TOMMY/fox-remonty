@@ -1,9 +1,39 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
+import Language from "./parts/Language";
+import { FaRegCopyright } from "react-icons/fa";
 
 function Footer() {
+  const { darkMode } = useContext(ThemeContext);
   return (
-    <div>Footer</div>
-  )
+    <div
+      className={
+        darkMode
+          ? "dark-container footer-container"
+          : "light-container footer-container"
+      }
+    >
+      <div className="left-footer-container">
+        <div
+          className={
+            darkMode ? "dark-text small-font" : "light-text small-font"
+          }
+        >
+          <Language englishText={`Thank you`} polishText={`Dziękuję`} />
+        </div>
+      </div>
+      <div className="right-footer-container">
+        <p
+          className={
+            darkMode ? "dark-text small-font" : "light-text small-font"
+          }
+        >
+          <FaRegCopyright />
+          FOX REMONTY 2023/2024
+        </p>
+      </div>
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;
