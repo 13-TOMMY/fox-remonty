@@ -1,0 +1,23 @@
+/* Color variables */
+$color-black: #000000;
+$color-white: #ffffff;
+$color-dark-gray: #141414;
+$color-off-white: #faf7ea; // Off-white with a beige undertone
+$color-british-racing-green: #004225;
+$color-yellow: #ffd700;
+
+/* font variables */
+$font-family: 'Oswald', sans-serif;
+$s-font: 16px;
+$m-font: 22px;
+$l-font: 32px;
+
+/* border variables */
+$border-width: 1px;
+$out-border-radius: 12px;
+$in-border-radius: 8px;
+
+// Breakpoints
+$breakpoint-s: 320px;
+$breakpoint-m: 768px;
+$breakpoint-l: 1024px;

@@ -1,0 +1,9 @@
+.footer-container {
+  display: flex;
+  @include tablet {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
+}

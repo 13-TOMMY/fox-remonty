@@ -1,10 +1,11 @@
 @import "./reset";
 @import "./variables";
 @import "./mixins";
+@import "./modes";
 
 // Import component-specific Sass files
-@import './components/header.sass';
-@import './components/footer.sass';
+@import './components/header.scss';
+@import './components/footer.scss';
 
 // Import page-specific Sass files
 @import './pages/homepage.scss';

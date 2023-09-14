@@ -1,0 +1,24 @@
+//Dark mode
+.dark-container {
+  background: rgba(20, 20, 20, 0.83);
+  border-radius: $out-border-radius;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(17.2px);
+  -webkit-backdrop-filter: blur(17.2px);
+  border: 1px solid rgba(20, 20, 20, 0.49);
+}
+.dark-text{
+    color: $color-white;
+}
+//Light mode
+.light-container {
+  background: rgba(250, 247, 234, 0.83);
+  border-radius: $out-border-radius;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(17.2px);
+  -webkit-backdrop-filter: blur(17.2px);
+  border: 1px solid rgba(250, 247, 234, 0.49);
+}
+.light-text{
+    color: $color-black;
+}
