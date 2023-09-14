@@ -1,7 +1,7 @@
-import React, { useState, createContext, useEffect } from "react";
+import { useState, createContext, useEffect, ReactNode } from "react";
 
 interface LangContextProviderProps {
-  lang: boolean;
+  lang: ReactNode;
 }
 interface LangContextValue { 
   language: string;
