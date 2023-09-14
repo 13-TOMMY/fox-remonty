@@ -6,7 +6,9 @@ interface CombinedContextProps {
   children: ReactNode;
 }
 
-export default function CombinedContextProvider({ children }: CombinedContextProps) {
+export default function CombinedContextProvider({
+  children,
+}: CombinedContextProps) {
   return (
     <ThemeContextProvider>
       <LangContextProvider>{children}</LangContextProvider>

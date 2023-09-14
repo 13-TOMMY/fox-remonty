@@ -1,16 +1,20 @@
 import { useState, createContext, useEffect, ReactNode } from "react";
 
 interface LangContextProviderProps {
-  lang: ReactNode;
+  children: ReactNode;
 }
-interface LangContextValue { 
+interface LangContextValue {
   language: string;
   toggleLanguage: () => void;
 }
 
-export const LangContext = createContext <LangContextValue | undefined>(undefined);
+export const LangContext = createContext<LangContextValue | undefined>(
+  undefined
+);
 
-export default function LangContextProvider({ lang } : LangContextProviderProps) {
+export default function LangContextProvider({
+  children,
+}: LangContextProviderProps) {
   const [language, setLanguage] = useState("eng");
 
   useEffect(() => {
@@ -28,7 +32,7 @@ export default function LangContextProvider({ lang } : LangContextProviderProps)
 
   return (
     <LangContext.Provider value={{ language, toggleLanguage }}>
-      { lang }
+      {children}
     </LangContext.Provider>
   );
 }

@@ -4,7 +4,7 @@ import Language from "./parts/Language";
 import { FaRegCopyright } from "react-icons/fa";
 
 function Footer() {
-  const { darkMode } = useContext(ThemeContext);
+  const { darkMode }  : boolean = useContext(ThemeContext);
   return (
     <div
       className={

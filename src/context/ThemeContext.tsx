@@ -1,15 +1,16 @@
 import { useState, createContext, useEffect, ReactNode } from 'react';
+
 interface ThemeContextValue {
   darkMode: boolean;
   setDarkMode: (darkMode: boolean) => void;
 }
 interface ThemeContextProviderProps {
-  theme: ReactNode;
+  children: ReactNode;
 }
 
 export const ThemeContext = createContext < ThemeContextValue | undefined > (undefined);
 
-export default function ThemeContextProvider( {theme} : ThemeContextProviderProps) {
+export default function ThemeContextProvider( {children} : ThemeContextProviderProps) {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
@@ -25,7 +26,7 @@ export default function ThemeContextProvider( {theme} : ThemeContextProviderProp
 
   return (
     <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
-      {theme}
+      {children}
     </ThemeContext.Provider>
   );
 }
