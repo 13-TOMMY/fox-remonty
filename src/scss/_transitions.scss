@@ -1,0 +1,11 @@
+.transition-opacity {
+    @include transition(opacity);
+  }
+  
+  .transition-transform {
+    @include transition(transform);
+  }
+  
+  .transition-color {
+    @include transition(color);
+  }

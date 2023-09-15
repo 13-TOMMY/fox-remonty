@@ -1,8 +1,10 @@
 @import "./reset";
 @import "./variables";
 @import "./mixins";
+@import "./global";
 @import "./modes";
-
+@import "./typography";
+@import "./transitions";
 // Import component-specific Sass files
 @import './components/header.scss';
 @import './components/footer.scss';

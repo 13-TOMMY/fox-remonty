@@ -11,3 +11,8 @@
     }
   }
   
+//transitions
+
+@mixin transition($property...) {
+  transition: $property $transition-duration $transition-easing;
+}

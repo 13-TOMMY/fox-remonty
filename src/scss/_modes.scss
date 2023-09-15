@@ -6,9 +6,20 @@
   backdrop-filter: blur(17.2px);
   -webkit-backdrop-filter: blur(17.2px);
   border: 1px solid rgba(20, 20, 20, 0.49);
+
+  @include transition(
+    background,
+    border-radius,
+    box-shadow,
+    backdrop-filter,
+    -webkit-backdrop-filter,
+    border
+  );
 }
-.dark-text{
-    color: $color-white;
+.dark-text {
+  color: $color-white;
+
+  @include transition(color);
 }
 //Light mode
 .light-container {
@@ -18,7 +29,18 @@
   backdrop-filter: blur(17.2px);
   -webkit-backdrop-filter: blur(17.2px);
   border: 1px solid rgba(250, 247, 234, 0.49);
+
+  @include transition(
+    background,
+    border-radius,
+    box-shadow,
+    backdrop-filter,
+    -webkit-backdrop-filter,
+    border
+  );
 }
-.light-text{
-    color: $color-black;
+.light-text {
+  color: $color-black;
+
+  @include transition(color);
 }

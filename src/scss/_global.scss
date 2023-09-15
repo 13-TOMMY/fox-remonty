@@ -1,0 +1,17 @@
+
+html {
+    box-sizing: border-box;
+    background-color: $color-off-white;
+    font-family: $font-family;
+  }
+
+button,
+a,
+link {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

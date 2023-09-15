@@ -1,3 +1,4 @@
+
 /* Color variables */
 $color-black: #000000;
 $color-white: #ffffff;
@@ -21,3 +22,7 @@ $in-border-radius: 8px;
 $breakpoint-s: 320px;
 $breakpoint-m: 768px;
 $breakpoint-l: 1024px;
+
+//transitions
+$transition-duration: 0.2s;
+$transition-easing: ease-in-out;

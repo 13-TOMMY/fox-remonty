@@ -16,7 +16,7 @@ function Footer() {
       <div className="left-footer-container">
         <div
           className={
-            darkMode ? "dark-text small-font" : "light-text small-font"
+            darkMode ? "dark-text m-font text-left-footer" : "light-text m-font text-right-footer"
           }
         >
           <Language englishText={`Thank you`} polishText={`Dziękuję`} />
@@ -25,7 +25,7 @@ function Footer() {
       <div className="right-footer-container">
         <p
           className={
-            darkMode ? "dark-text small-font" : "light-text small-font"
+            darkMode ? "dark-text m-font text-right-footer" : "light-text m-font text-right-footer"
           }
         >
           <FaRegCopyright />
