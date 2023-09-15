@@ -1,0 +1,32 @@
+.header-container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  // @include tablet {
+
+  // }
+  // @include mobile {
+
+  // }
+}
+.left-header-container {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  @include mobile {
+    display: none;
+  }
+}
+.right-header-container {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mobile {
+      width: 100%;
+    }
+  }
