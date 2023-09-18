@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { LangContext } from "../context/LangContext";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { BiSolidMoon, BiSun } from "react-icons/bi";
 import Language from "./parts/Language";
@@ -10,6 +10,7 @@ function Header() {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
   const { language, toggleLanguage } = useContext(LangContext);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const handleDarkChange = (isChecked: boolean): void => {
     setDarkMode(isChecked);
@@ -28,7 +29,11 @@ function Header() {
       }
     >
       <div className="left-header-container">
-        <img src="/logo/fox-remonty-logo-nobg.png" alt="Fox Remonty logo" />
+        <img
+          src="/logo/fox-remonty-logo-nobg.png"
+          alt="Fox Remonty logo"
+          onClick={() => navigate("/")}
+        />
       </div>
       <div className="right-header-container">
         <div className="right-header-links">
@@ -38,8 +43,12 @@ function Header() {
               whileHover={{ scale: 1.2 }}
               className={
                 darkMode
-                  ? `icon ${isHomepage ? "selected-dark m-font" : "dark-text m-font"}`
-                  : `icon ${isHomepage ? "selected-light m-font" : "light-text m-font"}`
+                  ? `icon ${
+                      isHomepage ? "selected-dark m-font" : "dark-text m-font"
+                    }`
+                  : `icon ${
+                      isHomepage ? "selected-light m-font" : "light-text m-font"
+                    }`
               }
             >
               <Language englishText={`ABOUT US`} polishText={`O NAS`} />
@@ -51,8 +60,12 @@ function Header() {
               whileHover={{ scale: 1.2 }}
               className={
                 darkMode
-                  ? `icon ${isProjects ? "selected-dark m-font" : "dark-text m-font"}`
-                  : `icon ${isProjects ? "selected-light m-font" : "light-text m-font"}`
+                  ? `icon ${
+                      isProjects ? "selected-dark m-font" : "dark-text m-font"
+                    }`
+                  : `icon ${
+                      isProjects ? "selected-light m-font" : "light-text m-font"
+                    }`
               }
             >
               <Language englishText={`SERVICES`} polishText={`USŁUGI`} />
@@ -64,8 +77,12 @@ function Header() {
               whileHover={{ scale: 1.2 }}
               className={
                 darkMode
-                  ? `icon ${isContact ? "selected-dark m-font" : "dark-text m-font"}`
-                  : `icon ${isContact ? "selected-light m-font" : "light-text m-font"}`
+                  ? `icon ${
+                      isContact ? "selected-dark m-font" : "dark-text m-font"
+                    }`
+                  : `icon ${
+                      isContact ? "selected-light m-font" : "light-text m-font"
+                    }`
               }
             >
               <Language englishText={`CONTACT`} polishText={`KONTAKT`} />
@@ -77,8 +94,11 @@ function Header() {
             onClick={() => handleDarkChange(!darkMode)}
             initial={{ scale: 1 }}
             whileHover={{ scale: 1.2 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
             className={
-              darkMode ? `dark-mode-btn mode-btn  m-font` : `light-mode-btn mode-btn  m-font`
+              darkMode
+                ? `dark-btn mode-btn  m-font`
+                : `light-btn mode-btn  m-font`
             }
           >
             {darkMode ? <BiSolidMoon /> : <BiSun />}
@@ -88,8 +108,11 @@ function Header() {
             onClick={toggleLanguage}
             initial={{ scale: 1 }}
             whileHover={{ scale: 1.2 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
             className={
-              darkMode ? `pl-mode-btn mode-btn  m-font` : `eng-mode-btn mode-btn  m-font`
+              darkMode
+                ? `dark-btn mode-btn  m-font`
+                : `light-btn mode-btn  m-font`
             }
           >
             {language === "PL" ? "ENG" : "PL"}

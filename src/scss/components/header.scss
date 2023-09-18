@@ -22,6 +22,7 @@
 .left-header-container img {
   width: 80px;
   height: 80px;
+  cursor: pointer;
 }
 //right side of header
 .right-header-container {
@@ -79,32 +80,17 @@
   }
 }
 //dark mode
-.dark-mode-btn {
+.dark-btn {
   background-color: $color-yellow;
   color: $color-dark-gray;
   &:hover {
-    border: $border-width bold $color-yellow;
+    border: $border-width solid  $color-off-white;
   }
 }
-.light-mode-btn {
+.light-btn {
   background-color: $color-british-racing-green;
   color: $color-off-white;
   &:hover {
-    border: $border-width bold $color-yellow;
-  }
-}
-//language mode
-.pl-mode-btn {
-  background-color: $color-yellow;
-  color: $color-dark-gray;
-  &:hover {
-    border: $border-width bold $color-yellow;
-  }
-}
-.eng-mode-btn {
-  background-color: $color-british-racing-green;
-  color: $color-off-white;
-  &:hover {
-    border: $border-width bold $color-yellow;
+    border: $border-width solid $color-dark-gray;
   }
 }

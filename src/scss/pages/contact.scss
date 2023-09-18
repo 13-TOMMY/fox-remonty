@@ -1,0 +1,100 @@
+//contact page
+.contact-container {
+  height: fit-content;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 700px;
+  padding: 50px 20px;
+  height: fit-content;
+  @include tablet {
+    width: 650px;
+  }
+  @include mobile {
+    width: 90%;
+  }
+}
+.form-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  gap: 25px;
+  padding: 0 15px 20px 15px;
+}
+.form-title h2 {
+  width: 100%;
+  text-align: center;
+}
+.form-title p {
+  width: 100%;
+  text-align: center;
+}
+.contact-form-fields {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.form-name,
+.form-email,
+.form-phone,
+.form-message {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 10px;
+  gap: 5px;
+}
+.cf-label {
+  padding-left: 15px;
+}
+.input-field {
+  width: 90%;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  padding: 0 5%;
+  font-size: $s-font;
+}
+.text-field {
+  width: 90%;
+  height: 200px;
+  border-radius: 12px;
+  border: none;
+  padding: 5%;
+  font-size: $s-font;
+}
+.form-btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.cf-btn {
+  width: 120px;
+  height: 50px;
+  border-radius: $in-border-radius;
+}
+.dark-btn-form{
+  
+}
+.dark-btn-two-form{
+}
+.light-btn-form{
+
+}
+.light-btn-two-form{
+
+}
