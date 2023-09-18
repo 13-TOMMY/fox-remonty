@@ -15,7 +15,7 @@ export const LangContext = createContext<LangContextValue | undefined>(
 export default function LangContextProvider({
   children,
 }: LangContextProviderProps) {
-  const [language, setLanguage] = useState("eng");
+  const [language, setLanguage] = useState("PL");
 
   useEffect(() => {
     const storedLanguage = localStorage.getItem("language");
@@ -25,7 +25,7 @@ export default function LangContextProvider({
   }, []);
 
   const toggleLanguage = () => {
-    const newLanguage = language === "eng" ? "pl" : "eng";
+    const newLanguage = language === "PL" ? "ENG" : "PL";
     setLanguage(newLanguage);
     localStorage.setItem("language", newLanguage);
   };

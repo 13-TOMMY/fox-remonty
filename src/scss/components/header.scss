@@ -3,30 +3,108 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-
-  // @include tablet {
-
-  // }
-  // @include mobile {
-
-  // }
+  padding: $padding-l;
+  @include tablet {
+    padding: $padding-m;
+  }
+  @include mobile {
+    padding: $padding-s;
+  }
 }
+//left side of header
 .left-header-container {
-  width: 40%;
+  width: 20%;
   height: 80%;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+}
+.left-header-container img {
+  width: 80px;
+  height: 80px;
+}
+//right side of header
+.right-header-container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: $gap-xl;
+  @include tablet {
+  }
   @include mobile {
-    display: none;
+    gap: $gap-s;
+    align-items: flex-end;
+    flex-direction: column;
   }
 }
-.right-header-container {
-    width: 40%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @include mobile {
-      width: 100%;
-    }
+//header links
+.right-header-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80%;
+  width: fit-content;
+  gap: $gap-l;
+  @include mobile {
+    gap: $gap-m;
+    height: 50%;
   }
+}
+//header buttons
+.right-header-btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 80%;
+  width: fit-content;
+  gap: $gap-l;
+  @include mobile {
+    gap: $gap-m;
+    height: 50%;
+  }
+}
+.mode-btn {
+  height: 40px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $in-border-radius;
+  border: transparent;
+  @include mobile {
+    height: 35px;
+    width: 60px;
+  }
+}
+//dark mode
+.dark-mode-btn {
+  background-color: $color-yellow;
+  color: $color-dark-gray;
+  &:hover {
+    border: $border-width bold $color-yellow;
+  }
+}
+.light-mode-btn {
+  background-color: $color-british-racing-green;
+  color: $color-off-white;
+  &:hover {
+    border: $border-width bold $color-yellow;
+  }
+}
+//language mode
+.pl-mode-btn {
+  background-color: $color-yellow;
+  color: $color-dark-gray;
+  &:hover {
+    border: $border-width bold $color-yellow;
+  }
+}
+.eng-mode-btn {
+  background-color: $color-british-racing-green;
+  color: $color-off-white;
+  &:hover {
+    border: $border-width bold $color-yellow;
+  }
+}

@@ -1,15 +1,17 @@
-import { ReactNode, useContext } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { LangContext } from "../context/LangContext";
 import { useLocation, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { BiHomeAlt2 } from "react-icons/bi";
+import { BiSolidMoon, BiSun } from "react-icons/bi";
+import Language from "./parts/Language";
 
 function Header() {
-  const { darkMode, setDarkMode }: boolean = useContext(ThemeContext);
-  const { language, toggleLanguage }: boolean = useContext(LangContext);
+  const { darkMode, setDarkMode } = useContext(ThemeContext);
+  const { language, toggleLanguage } = useContext(LangContext);
   const location = useLocation();
-  const handleDarkChange = (isChecked): any => {
+
+  const handleDarkChange = (isChecked: boolean): void => {
     setDarkMode(isChecked);
   };
 
@@ -29,45 +31,70 @@ function Header() {
         <img src="/logo/fox-remonty-logo-nobg.png" alt="Fox Remonty logo" />
       </div>
       <div className="right-header-container">
-        <Link to="/">
-          <motion.div
+        <div className="right-header-links">
+          <Link to="/">
+            <motion.div
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.2 }}
+              className={
+                darkMode
+                  ? `icon ${isHomepage ? "selected-dark m-font" : "dark-text m-font"}`
+                  : `icon ${isHomepage ? "selected-light m-font" : "light-text m-font"}`
+              }
+            >
+              <Language englishText={`ABOUT US`} polishText={`O NAS`} />
+            </motion.div>
+          </Link>
+          <Link to="/projects">
+            <motion.div
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.2 }}
+              className={
+                darkMode
+                  ? `icon ${isProjects ? "selected-dark m-font" : "dark-text m-font"}`
+                  : `icon ${isProjects ? "selected-light m-font" : "light-text m-font"}`
+              }
+            >
+              <Language englishText={`SERVICES`} polishText={`USŁUGI`} />
+            </motion.div>
+          </Link>
+          <Link to="/contact">
+            <motion.div
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.2 }}
+              className={
+                darkMode
+                  ? `icon ${isContact ? "selected-dark m-font" : "dark-text m-font"}`
+                  : `icon ${isContact ? "selected-light m-font" : "light-text m-font"}`
+              }
+            >
+              <Language englishText={`CONTACT`} polishText={`KONTAKT`} />
+            </motion.div>
+          </Link>
+        </div>
+        <div className="right-header-btns">
+          <motion.button
+            onClick={() => handleDarkChange(!darkMode)}
             initial={{ scale: 1 }}
             whileHover={{ scale: 1.2 }}
             className={
-              darkMode
-                ? `icon ${isHomepage ? "selected-dark" : "dark-text"}`
-                : `icon ${isHomepage ? "selected-light" : "light-text"}`
+              darkMode ? `dark-mode-btn mode-btn  m-font` : `light-mode-btn mode-btn  m-font`
             }
           >
-            <BiHomeAlt2 />
-          </motion.div>
-        </Link>
-        <Link to="/projects">
-          <motion.div
+            {darkMode ? <BiSolidMoon /> : <BiSun />}
+          </motion.button>
+
+          <motion.button
+            onClick={toggleLanguage}
             initial={{ scale: 1 }}
             whileHover={{ scale: 1.2 }}
             className={
-              darkMode
-                ? `icon ${isProjects ? "selected-dark" : "dark-text"}`
-                : `icon ${isProjects ? "selected-light" : "light-text"}`
+              darkMode ? `pl-mode-btn mode-btn  m-font` : `eng-mode-btn mode-btn  m-font`
             }
           >
-            <BiHomeAlt2 />
-          </motion.div>
-        </Link>
-        <Link to="/contact">
-          <motion.div
-            initial={{ scale: 1 }}
-            whileHover={{ scale: 1.2 }}
-            className={
-              darkMode
-                ? `icon ${isContact ? "selected-dark" : "dark-text"}`
-                : `icon ${isContact ? "selected-light" : "light-text"}`
-            }
-          >
-            <BiHomeAlt2 />
-          </motion.div>
-        </Link>
+            {language === "PL" ? "ENG" : "PL"}
+          </motion.button>
+        </div>
       </div>
     </div>
   );

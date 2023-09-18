@@ -8,7 +8,7 @@ interface LanguageProps {
 
 function Language({ englishText, polishText }: LanguageProps) {
   const { language } = useContext(LangContext);
-  const textContext = language === "eng" ? polishText : englishText;
+  const textContext = language === "PL" ? englishText : polishText;
   return <>{textContext}</>;
 }
 

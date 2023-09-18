@@ -1,4 +1,3 @@
-
 /* Color variables */
 $color-black: #000000;
 $color-white: #ffffff;
@@ -8,15 +7,26 @@ $color-british-racing-green: #004225;
 $color-yellow: #ffd700;
 
 /* font variables */
-$font-family: 'Oswald', sans-serif;
+$font-family: "Oswald", sans-serif;
 $s-font: 16px;
 $m-font: 22px;
 $l-font: 32px;
 
 /* border variables */
-$border-width: 1px;
+$border-width: 2px;
 $out-border-radius: 12px;
 $in-border-radius: 8px;
+
+//padding
+$padding-s: 0 20px;
+$padding-m: 0 50px;
+$padding-l: 0 10%;
+
+//gap
+$gap-s: 10px;
+$gap-m: 15px;
+$gap-l: 20px;
+$gap-xl: 50px;
 
 // Breakpoints
 $breakpoint-s: 320px;

@@ -22,8 +22,9 @@
   @include transition(color);
 }
 .selected-dark{
-  color: $color-british-racing-green;
+  color: $color-yellow;
 }
+
 //Light mode
 .light-container {
   background: rgba(250, 247, 234, 0.83);
@@ -44,10 +45,9 @@
 }
 .light-text {
   color: $color-black;
-
   @include transition(color);
 }
 
-.selected-dark{
-  color: $color-yellow;
+.selected-light{
+  color: $color-british-racing-green;
 }
