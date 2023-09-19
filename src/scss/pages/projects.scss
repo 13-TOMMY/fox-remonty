@@ -1,0 +1,82 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "carousel-project-one text-project-one"
+    "text-project-two carousel-project-two"
+    "carousel-project-three text-project-three";
+  width: 100%;
+}
+
+.carousel-project-one {
+  grid-area: carousel-project-one;
+}
+
+.text-project-one {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 2px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "h3-text-project-one"
+    "p-text-project-one";
+  grid-area: text-project-one;
+}
+
+.p-text-project-one {
+  grid-area: p-text-project-one;
+}
+
+.h3-text-project-one {
+  grid-area: h3-text-project-one;
+}
+
+.carousel-project-two {
+  grid-area: carousel-project-two;
+}
+
+.carousel-project-three {
+  grid-area: carousel-project-three;
+}
+
+.text-project-two {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 2px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "h3-text-project-two"
+    "p-text-project-two";
+  grid-area: text-project-two;
+}
+
+.h3-text-project-two {
+  grid-area: h3-text-project-two;
+}
+
+.p-text-project-two {
+  grid-area: p-text-project-two;
+}
+
+.text-project-three {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 2px 0px;
+  grid-auto-flow: row;
+  grid-area: text-project-three;
+}
+
+.h3-text-project-three {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.p-text-project-three {
+  grid-area: 2 / 1 / 3 / 2;
+}

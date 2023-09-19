@@ -1,11 +1,17 @@
 //Dark mode
+.dark-background {
+  background-image: url("/background/dark-background-home.png");
+  background-size: cover;
+  background-position: top;
+  background-attachment: scroll;
+}
 .dark-container {
-  background: rgba(20, 20, 20, 0.83);
+  background: rgba(20, 20, 20, 0.38);
   border-radius: $out-border-radius;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(17.2px);
-  -webkit-backdrop-filter: blur(17.2px);
-  border: 1px solid rgba(20, 20, 20, 0.49);
+  backdrop-filter: blur(6.6px);
+  -webkit-backdrop-filter: blur(6.6px);
+  border: 1px solid rgba(20, 20, 20, 0.91);
 
   @include transition(
     background,
@@ -21,17 +27,23 @@
 
   @include transition(color);
 }
-.selected-dark{
+.selected-dark {
   color: $color-yellow;
 }
 //Light mode
+.light-background {
+  background-image: url("/background/light-background-home.png");
+  background-size: cover;
+  background-position: top;
+  background-attachment: scroll;
+}
 .light-container {
-  background: rgba(250, 247, 234, 0.83);
+  background: rgba(250, 247, 234, 0.53);
   border-radius: $out-border-radius;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(17.2px);
-  -webkit-backdrop-filter: blur(17.2px);
-  border: 1px solid rgba(250, 247, 234, 0.49);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+  border: 1px solid rgba(250, 247, 234, 0.91);
 
   @include transition(
     background,
@@ -47,6 +59,6 @@
   @include transition(color);
 }
 
-.selected-light{
+.selected-light {
   color: $color-british-racing-green;
 }
