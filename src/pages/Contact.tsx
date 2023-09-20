@@ -70,20 +70,17 @@ const Contact: React.FC = () => {
         <div className="form-title">
           <h2 className={darkMode ? "dark-text l-font" : "light-text l-font"}>
             <Language
-              englishText={<>Contact Me!</>}
-              polishText={<>Skontaktuj się ze mną!</>}
+              englishText={"Contact Me!"}
+              polishText={"Skontaktuj się ze mną!"}
             />
           </h2>
           <p className={darkMode ? "dark-text m-font" : "light-text m-font"}>
             <Language
               englishText={
-                <> Please fill out the form below to get in touch with me.</>
+                "Please fill out the form below to get in touch with me."
               }
               polishText={
-                <>
-                  Proszę wypełnić poniższy formularz, aby się ze mną
-                  skontaktować.
-                </>
+                "Proszę wypełnić poniższy formularz, aby się ze mną skontaktować."
               }
             />
           </p>
@@ -98,7 +95,7 @@ const Contact: React.FC = () => {
                   : "light-text cf-label s-font"
               }
             >
-              <Language englishText={<>Name:</>} polishText={<>Imię</>} />
+              <Language englishText={"Name:"} polishText={"Imię"} />
             </label>
             <input
               type="text"
@@ -139,8 +136,8 @@ const Contact: React.FC = () => {
               }
             >
               <Language
-                englishText={<>Phone Number (Optional):</>}
-                polishText={<>Numer telefonu (opcjonalnie)</>}
+                englishText={"Phone Number (Optional):"}
+                polishText={"Numer telefonu (opcjonalnie)"}
               />
             </label>
             <input
@@ -160,10 +157,7 @@ const Contact: React.FC = () => {
                   : "light-text cf-label s-font"
               }
             >
-              <Language
-                englishText={<>Message:</>}
-                polishText={<>Wiadomość:</>}
-              />
+              <Language englishText={"Message:"} polishText={"Wiadomość:"} />
             </label>
             <textarea
               name="message"
@@ -187,7 +181,7 @@ const Contact: React.FC = () => {
                   : "light-text  light-btn-form cf-btn m-font"
               }
             >
-              <Language englishText={<>Send</>} polishText={<>Wyślij</>} />
+              <Language englishText={"Send"} polishText={"Wyślij"} />
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.2 }}
@@ -201,7 +195,7 @@ const Contact: React.FC = () => {
                   : "light-text light-btn-two-form cf-btn m-font"
               }
             >
-              <Language englishText={<>Clear</>} polishText={<>Wyczyść</>} />
+              <Language englishText={"Clear"} polishText={"Wyczyść"} />
             </motion.button>
           </div>
         </form>
