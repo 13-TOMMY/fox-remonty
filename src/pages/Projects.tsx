@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../scss/pages/projects.scss";
 import Language from "../components/parts/Language";
 import Carousel from "../components/Carousel";
+import { ThemeContext } from "../context/ThemeContext";
 
 function Projects() {
+  const { darkMode } = useContext(ThemeContext);
   const imgSetOne: string[] = [
     "/imgs/portfolio-imgs-dummy/dummy-one.avif",
     "/imgs/portfolio-imgs-dummy/dummy-two.avif",
@@ -25,20 +27,40 @@ function Projects() {
         <div className="carousel-project-one">
           <Carousel images={imgSetOne} />
         </div>
-        <div className="text-project-one">
+        <div
+          className={
+            darkMode
+              ? "dark-container text-project-one"
+              : "light-container text-project-one"
+          }
+        >
           <div className="h3-text-project-one">
-            <Language englishText={`ABOUT US`} polishText={`O NAS`} />
+            <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
+              <Language englishText={`ABOUT US`} polishText={`O NAS`} />
+            </h3>
           </div>
           <div className="p-text-project-one">
-            <Language englishText={`ABOUT US`} polishText={`O NAS`} />
+            <p className={darkMode ? "dark-text s-font" : "light-text s-font"}>
+              <Language englishText={`ABOUT US`} polishText={`O NAS`} />
+            </p>
           </div>
         </div>
-        <div className="text-project-two">
+        <div
+          className={
+            darkMode
+              ? "dark-container text-project-two"
+              : "light-container text-project-two"
+          }
+        >
           <div className="h3-text-project-two">
-            <Language englishText={`ABOUT US`} polishText={`O NAS`} />
+            <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
+              <Language englishText={`ABOUT US`} polishText={`O NAS`} />
+            </h3>
           </div>
           <div className="p-text-project-two">
-            <Language englishText={`ABOUT US`} polishText={`O NAS`} />
+            <p className={darkMode ? "dark-text s-font" : "light-text s-font"}>
+              <Language englishText={`ABOUT US`} polishText={`O NAS`} />
+            </p>
           </div>
         </div>
         <div className="carousel-project-two">
@@ -47,12 +69,22 @@ function Projects() {
         <div className="carousel-project-three">
           <Carousel images={imgSetThree} />
         </div>
-        <div className="text-project-three">
+        <div
+          className={
+            darkMode
+              ? "dark-container text-project-three"
+              : "light-container text-project-three"
+          }
+        >
           <div className="h3-text-project-three">
-            <Language englishText={`ABOUT US`} polishText={`O NAS`} />
+            <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
+              <Language englishText={`ABOUT US`} polishText={`O NAS`} />
+            </h3>
           </div>
           <div className="p-text-project-three">
-            <Language englishText={`ABOUT US`} polishText={`O NAS`} />
+            <p className={darkMode ? "dark-text s-font" : "light-text s-font"}>
+              <Language englishText={`ABOUT US`} polishText={`O NAS`} />
+            </p>
           </div>
         </div>
       </div>
