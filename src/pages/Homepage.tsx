@@ -1,4 +1,3 @@
-import React from 'react'
 import '../scss/pages/homepage.scss'
 import Banner from '../components/Banner'
 

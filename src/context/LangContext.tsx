@@ -8,8 +8,13 @@ interface LangContextValue {
   toggleLanguage: () => void;
 }
 
-export const LangContext = createContext<LangContextValue | undefined>(
-  undefined
+const defaultLangContextValue: LangContextValue = {
+  language: "PL",
+  toggleLanguage: () => {},
+};
+
+export const LangContext = createContext<LangContextValue>(
+  defaultLangContextValue
 );
 
 export default function LangContextProvider({

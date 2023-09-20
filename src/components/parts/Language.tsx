@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { LangContext } from "../../context/LangContext";
 
 interface LanguageProps {

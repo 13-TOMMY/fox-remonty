@@ -4,13 +4,19 @@ interface ThemeContextValue {
   darkMode: boolean;
   setDarkMode: (darkMode: boolean) => void;
 }
+
 interface ThemeContextProviderProps {
   children: ReactNode;
 }
 
-export const ThemeContext = createContext < ThemeContextValue | undefined > (undefined);
+export const ThemeContext = createContext<ThemeContextValue>({
+  darkMode: false,
+  setDarkMode: () => {},
+});
 
-export default function ThemeContextProvider( {children} : ThemeContextProviderProps) {
+export default function ThemeContextProvider({
+  children,
+}: ThemeContextProviderProps) {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
