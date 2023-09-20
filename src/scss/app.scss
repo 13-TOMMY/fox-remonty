@@ -1,6 +1,6 @@
 @import "./reset";
-@import "./variables";
 @import "./mixins";
+@import "./variables";
 @import "./global";
 @import "./modes";
 @import "./typography";
@@ -15,6 +15,6 @@
 @import './pages/contact.scss';
 
 .viewable-area{
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
 }

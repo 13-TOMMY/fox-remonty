@@ -1,26 +1,43 @@
 .project-container {
   display: flex;
-  align-items:  flex-start;
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
-  height: 1000px;
+  height: fit-content;
 }
 .project-container-grid {
   display: grid;
-  grid-template-columns: 400px 400px;
+  grid-template-columns: 450px 450px;
   grid-template-rows: 350px 350px 350px;
-  gap: 20px 10%;
+  gap: 100px 50px;
   grid-template-areas:
     "carousel-project-one text-project-one"
     "text-project-two carousel-project-two"
     "carousel-project-three text-project-three";
+  width: fit-content;
+  padding: 100px 0;
+  @include tablet {
+    grid-template-columns: 600px;
+    grid-template-rows: 350px 350px 350px 350px 350px 350px;
+    grid-template-areas:
+      "carousel-project-one"
+      "text-project-one"
+      "carousel-project-two"
+      "text-project-two"
+      "carousel-project-three"
+      "text-project-three";
+    gap: 50px 0;
+    padding: 50px 0;
+  }
+  @include mobile {
     width: 100%;
+    grid-template-columns: 100%;
+    padding: 50px 5%;
+  }
 }
 
 .carousel-project-one {
   grid-area: carousel-project-one;
-  width: 400px;
-  height: 350px;
 }
 
 .text-project-one {
@@ -29,9 +46,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: $padding-double-s;
+  gap: 20px;
+  @include tablet {
+    padding: $padding-double-m;
+  }
+  @include mobile {
+    padding: $padding-double-l;
+  }
 }
 
 .p-text-project-one {
+  text-align: center;
+  line-height: 22px;
 }
 
 .h3-text-project-one {
@@ -39,8 +66,6 @@
 
 .carousel-project-two {
   grid-area: carousel-project-two;
-  width: 400px;
-  height: 350px;
 }
 
 .text-project-two {
@@ -49,18 +74,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: $padding-double-s;
+  gap: 20px;
+  @include tablet {
+    padding: $padding-double-m;
+  }
+  @include mobile {
+    padding: $padding-double-l;
+  }
 }
 
 .h3-text-project-two {
 }
 
 .p-text-project-two {
+  text-align: center;
+  line-height: 22px;
 }
 
 .carousel-project-three {
   grid-area: carousel-project-three;
-  width: 400px;
-  height: 350px;
 }
 .text-project-three {
   grid-area: text-project-three;
@@ -68,10 +101,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: $padding-double-s;
+  gap: 20px;
+  @include tablet {
+    padding: $padding-double-m;
+  }
+  @include mobile {
+    padding: $padding-double-l;
+  }
 }
 
 .h3-text-project-three {
 }
 
 .p-text-project-three {
+  text-align: center;
+  line-height: 22px;
 }
