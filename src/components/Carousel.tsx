@@ -30,8 +30,14 @@ function Carousel({ images }: CarouselProps) {
   }, [currentImageIndex]);
 
   return (
-    <div className="carousel-carousel">
+    <div className="carousel-container">
       <motion.img
+        style={{
+          width: "100%",
+          height: "350px",
+          objectFit: "cover",
+          objectPosition: "center",
+        }}
         src={images[currentImageIndex]}
         alt="Carousel"
         initial={{ opacity: 0 }}
@@ -39,23 +45,21 @@ function Carousel({ images }: CarouselProps) {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
       />
-      <div className="btnsIC">
+      <div className="btns-carousel-container">
         <button onClick={prevImage}>
-          <BsFillArrowLeftCircleFill className="leftArrowIC" />
+          <BsFillArrowLeftCircleFill className="left-arrow-carousel-container" />
         </button>
-        <div className="indicators">
-          {images.map((_, index) => (
-            <div
-              key={index}
-              className={`indicator ${
-                index === currentImageIndex ? "active" : ""
-              }`}
-              onClick={() => setCurrentImageIndex(index)}
-            />
-          ))}
+        <div className="indicators-carousel-container">
+        {images.map((_, index) => (
+          <div
+            key={index}
+            className={`indicator ${index === currentImageIndex ? "active" : ""}`}
+            onClick={() => setCurrentImageIndex(index)}
+          />
+        ))}
         </div>
         <button onClick={nextImage}>
-          <BsFillArrowRightCircleFill className="rightArrowIC" />
+          <BsFillArrowRightCircleFill className="right-arrow-carousel-container" />
         </button>
       </div>
     </div>

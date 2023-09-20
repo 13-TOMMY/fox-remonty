@@ -14,7 +14,7 @@ function App() {
   return (
     <BrowserRouter>
       <div
-        className={darkMode ? "dark-background" : "light-background"}
+        className={darkMode ? "dark-background viewable-area" : "light-background viewable-area"}
       >
         <Header />
         <Routes>
