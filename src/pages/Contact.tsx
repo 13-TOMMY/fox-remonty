@@ -50,10 +50,9 @@ const Contact: React.FC = () => {
   };
 
   const validatePhoneNumber = (inputPhoneNumber: string): boolean => {
-    if (!inputPhoneNumber.trim()) {
+    if (!inputPhoneNumber) {
       return true;
     }
-
     const phoneRegex = /\+?[0-9\s-()]{6,20}/;
     return phoneRegex.test(inputPhoneNumber);
   };
@@ -162,8 +161,8 @@ const Contact: React.FC = () => {
             </label>
             <textarea
               name="message"
-              cols="30"
-              rows="6"
+              cols={30}
+              rows={6}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
