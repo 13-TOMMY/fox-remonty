@@ -50,9 +50,10 @@ const Contact: React.FC = () => {
   };
 
   const validatePhoneNumber = (inputPhoneNumber: string): boolean => {
-    if (!inputPhoneNumber) {
+    if (!inputPhoneNumber.trim()) {
       return true;
     }
+
     const phoneRegex = /\+?[0-9\s-()]{6,20}/;
     return phoneRegex.test(inputPhoneNumber);
   };

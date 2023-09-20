@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import Language from "./parts/Language";
 import { FaRegCopyright } from "react-icons/fa";
 
 function Footer() {
-  const { darkMode }  : boolean = useContext(ThemeContext);
+  const { darkMode } = useContext(ThemeContext);
   return (
     <div
       className={
@@ -16,7 +16,9 @@ function Footer() {
       <div className="left-footer-container">
         <div
           className={
-            darkMode ? "dark-text m-font text-left-footer" : "light-text m-font text-right-footer"
+            darkMode
+              ? "dark-text m-font text-left-footer"
+              : "light-text m-font text-right-footer"
           }
         >
           <Language englishText={`Thank you`} polishText={`Dziękuję`} />
@@ -25,7 +27,9 @@ function Footer() {
       <div className="right-footer-container">
         <p
           className={
-            darkMode ? "dark-text m-font text-right-footer" : "light-text m-font text-right-footer"
+            darkMode
+              ? "dark-text m-font text-right-footer"
+              : "light-text m-font text-right-footer"
           }
         >
           <FaRegCopyright />
