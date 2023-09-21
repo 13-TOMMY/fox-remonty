@@ -1,6 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-
 
 function Banner() {
   const [scrollPosition, setScrollPosition] = useState(0);
