@@ -1,38 +1,36 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-interface BannerProps {
-  keywords: string[];
-}
 
-function Banner({ keywords }: BannerProps) {
-  const [index, setIndex] = useState(0);
+function Banner() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % keywords.length);
-    }, 1500);
+    const container = containerRef.current;
+    if (!container) return;
 
-    return () => clearInterval(interval);
-  }, [keywords]);
+    const handleScroll = (e: WheelEvent) => {
+      const delta = e.deltaY;
+      setScrollPosition((prevScrollPosition) => prevScrollPosition + delta);
+    };
+
+    container.addEventListener('wheel', handleScroll);
+
+    return () => {
+      container.removeEventListener('wheel', handleScroll);
+    };
+  }, []);
 
   return (
-    <div className="banner-container">
-      <img src="/imgs/RE.svg" alt="" />
-      <div className="word-carousel">
-        <AnimatePresence>
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, x: "-100%" }}
-            animate={{ opacity: 1, x: "0%" }}
-            exit={{ opacity: 0, x: "100%" }}
-            transition={{ duration: 1 }}
-          >
-            {keywords[index]}
-          </motion.div>
-        </AnimatePresence>
-      </div>
+    <div className="banner-container" ref={containerRef}>
+     <img src="/imgs/RE.svg" alt="" />
+    <div className="banner-scrolling-text" style={{ transform: `translateX(${scrollPosition}px)` }}>
+      <h2 className="banner-scrolling-text-content">
+        This is some other text, not so big but still very big This is some other text, not so big but still very big
+      </h2>
     </div>
+  </div>
   );
 }
 

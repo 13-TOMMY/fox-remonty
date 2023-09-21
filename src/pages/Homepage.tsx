@@ -1,12 +1,19 @@
 import '../scss/pages/homepage.scss'
 import Banner from '../components/Banner'
+import About from '../components/About';
 
 function Homepage() {
-  const keywords = ["Keyword 1", "Keyword 2", "Keyword 3", "Keyword 4", "Keyword 5", "Keyword 6"];
 
   return (
     <div>
-      <Banner keywords={keywords} />
+      <div className='homepage-banner-container'>
+        <Banner/>
+        </div>
+      <div className='homepage-about-container'>
+        <About/>
+      </div>
+      <div className='homepage-works-container'></div>
+      <div className='homepage-business-card-container'></div>
     </div>
   )
 }
