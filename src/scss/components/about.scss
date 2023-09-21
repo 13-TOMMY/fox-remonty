@@ -1,0 +1,61 @@
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+}
+.grid-about-container {
+  display: grid;
+  grid-template-columns: 450px 450px;
+  grid-template-rows: 750px;
+  gap: 0px 50px;
+  grid-auto-flow: row;
+  grid-template-areas: "img-about-container text-about-container";
+  width: fit-content;
+  padding: 100px 0;
+  @include tablet {
+    grid-template-columns: 600px;
+    grid-template-rows: 750px 750px;
+    grid-template-areas:
+      "img-about-container"
+      "text-about-container";
+    gap: 50px 0;
+    padding: 50px 0;
+  }
+  @include mobile {
+    width: 100%;
+    grid-template-columns: 100%;
+    padding: 50px 5%;
+  }
+}
+
+.img-about-container {
+  grid-area: img-about-container;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: $out-border-radius;
+  }
+}
+
+.text-about-container {
+  grid-area: text-about-container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: $padding-double-s;
+  gap: 20px;
+  @include tablet {
+    padding: $padding-double-m;
+  }
+  @include mobile {
+    padding: $padding-double-l;
+  }
+  p{
+    text-align: center;
+  }
+}

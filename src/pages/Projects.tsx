@@ -87,7 +87,7 @@ function Projects() {
         >
           <div className="h3-text-project-three">
             <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
-              <Language englishText={`RENOVATIONS`} polishText={`O NAS`} />
+              <Language englishText={`RENOVATIONS`} polishText={`REMONTY`} />
             </h3>
           </div>
           <div className="p-text-project-three">

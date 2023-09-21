@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-around;
   padding: $padding-l;
+  margin: 25px 10px 0 10px;
   @include tablet {
     padding: $padding-m;
   }
@@ -84,7 +85,7 @@
   background-color: $color-yellow;
   color: $color-dark-gray;
   &:hover {
-    border: $border-width solid  $color-off-white;
+    border: $border-width solid $color-off-white;
   }
 }
 .light-btn {
