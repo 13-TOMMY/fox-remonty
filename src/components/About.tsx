@@ -20,13 +20,13 @@ function About() {
           <h3 className={darkMode ? "dark-text l-font" : "light-text l-font"}>
             <Language englishText={`About Us`} polishText={`O Nas`} />
           </h3>
-          <p className={darkMode ? "dark-text m-font" : "light-text m-font"}>
+          <p className={darkMode ? "dark-text" : "light-text"}>
             <Language
               englishText={`Welcome to Fox Remonty, Where Sławomir's Expertise Transforms Your Space!`}
               polishText={`Witaj w Fox Remonty, Gdzie Ekspertyza Sławomira Przemienia Twój Przestrzeń!`}
             />
           </p>
-          <p className={darkMode ? "dark-text m-font" : "light-text m-font"}>
+          <p className={darkMode ? "dark-text" : "light-text"}>
             <Language
               englishText={`With a legacy of over two decades in the construction industry, Sławomir brings his wealth of experience from London, England, to Poland. At Fox Remonty, we specialise in plastering, painting, and general renovations, ensuring that your home or business receives top-notch craftsmanship with every project.
 `}
@@ -34,7 +34,7 @@ function About() {
               `}
             />
           </p>
-          <p className={darkMode ? "dark-text m-font" : "light-text m-font"}>
+          <p className={darkMode ? "dark-text" : "light-text"}>
             <Language
               englishText={`Sławomir's commitment to quality and dedication to his craft have earned him a reputation for excellence. He understands that your space is a reflection of your lifestyle, and every project is a unique opportunity to create something truly exceptional. Whether you desire a fresh coat of paint, flawless plasterwork, or a complete renovation, Sławomir and his team are here to make your vision a reality.
 `}
@@ -42,7 +42,7 @@ function About() {
               `}
             />
           </p>
-          <p className={darkMode ? "dark-text m-font" : "light-text m-font"}>
+          <p className={darkMode ? "dark-text" : "light-text"}>
             <Language
               englishText={`Discover the difference that comes with choosing Fox Remonty for your construction needs. Contact us today and let Sławomir's passion and expertise transform your space into something extraordinary. Your dream space is just a project away with Fox Remonty.`}
               polishText={`Odkryj różnicę, jaką przynosi wybór Fox Remonty na potrzeby budowlane. Skontaktuj się z nami jeszcze dziś i pozwól pasji i ekspertyzie Sławomira przekształcić Twoją przestrzeń w coś nadzwyczajnego. Twoja wymarzona przestrzeń jest w zasięgu ręki dzięki Fox Remonty.`}
