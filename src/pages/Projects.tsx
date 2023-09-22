@@ -9,11 +9,11 @@ function Projects() {
     "/imgs/Plastering/AEE178EF-84A5-49F6-BFE0-8743038BD88A.jpeg",
     "/imgs/Plastering/IMG_0052.jpeg",
     "/imgs/Plastering/IMG_4224.jpeg",
-    "/imgs/Plastering/IMG_7190.jpeg",
-    "/imgs/Plastering/IMG_4224.jpeg",
-    "/imgs/Plastering/IMG_7195.jpeg",
-    "/imgs/Plastering/IMG_7196.jpeg",
-    "/imgs/Plastering/IMG_7200.jpeg",
+    // "/imgs/Plastering/IMG_7190.jpeg",
+    // "/imgs/Plastering/IMG_4224.jpeg",
+    // "/imgs/Plastering/IMG_7195.jpeg",
+    // "/imgs/Plastering/IMG_7196.jpeg",
+    // "/imgs/Plastering/IMG_7200.jpeg",
 
   ];
   const imgSetTwo: string[] = [
