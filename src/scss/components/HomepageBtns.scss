@@ -1,0 +1,84 @@
+.homepage-btns-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+}
+.grid-homepage-btns-container {
+  display: grid;
+  grid-template-columns: 450px 450px;
+  grid-template-rows: 450px;
+  gap: 0px 50px;
+  grid-auto-flow: row;
+  grid-template-areas: " text-homepage-btns-container img-homepage-btns-container";
+  width: fit-content;
+  @include tablet {
+    grid-template-columns: 450px;
+    grid-template-rows: 450px 450px;
+    grid-template-areas:
+      "img-homepage-btns-container"
+      "text-homepage-btns-container";
+    gap: 50px 0;
+    padding: 50px 0;
+  }
+  @include mobile {
+    width: 100%;
+    grid-template-columns: 100%;
+    padding: 50px 5%;
+  }
+}
+
+.text-homepage-btns-container {
+  grid-area: text-homepage-btns-container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  .business-card-container {
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    .download-btn {
+      height: 50px;
+      width: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: $in-border-radius;
+      border: transparent;
+    }
+  }
+  .find-out-container {
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    .view-btn {
+      height: 50px;
+      width: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: $in-border-radius;
+      border: transparent;
+    }
+  }
+}
+
+.img-homepage-btns-container {
+  grid-area: img-homepage-btns-container;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: fit;
+  }
+}

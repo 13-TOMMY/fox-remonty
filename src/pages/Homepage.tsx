@@ -1,12 +1,10 @@
 import "../scss/pages/homepage.scss";
 import Banner from "../components/Banner";
 import About from "../components/About";
-import BusinessCard from "../components/BusinessCard";
-import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import Keywords from "../components/Keywords";
+import HomepageBtns from "../components/HomepageBtns";
 
 function Homepage() {
-  const { darkMode } = useContext(ThemeContext);
   return (
     <div className="homepage-container">
       <div className="homepage-banner-container">
@@ -15,9 +13,11 @@ function Homepage() {
       <div className="homepage-about-container">
         <About />
       </div>
-      <div className="homepage-text-container l-font"></div>
+      <div className="homepage-text-container">
+        <Keywords />
+      </div>
       <div className="homepage-business-card-container">
-        <BusinessCard />
+        <HomepageBtns />
       </div>
     </div>
   );
