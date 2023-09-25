@@ -30,13 +30,7 @@
 .selected-dark {
   color: $color-yellow;
 }
-.dark-btn {
-  background-color: $color-yellow;
-  color: $color-dark-gray;
-  &:hover {
-    border: $border-width solid $color-off-white;
-  }
-}
+
 //Light mode
 .light-background {
   background-image: url("/background/light-background-home.png");
@@ -68,12 +62,4 @@
 
 .selected-light {
   color: $color-british-racing-green;
-}
-
-.light-btn {
-  background-color: $color-british-racing-green;
-  color: $color-off-white;
-  &:hover {
-    border: $border-width solid $color-dark-gray;
-  }
 }

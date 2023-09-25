@@ -71,6 +71,20 @@
       border: transparent;
     }
   }
+  .bv-btn-dark {
+    background-color: $color-yellow;
+    color: $color-dark-gray;
+    &:hover {
+      border: $border-width solid $color-off-white;
+    }
+  }
+  .bv-btn-light {
+    background-color: $color-british-racing-green;
+    color: $color-off-white;
+    &:hover {
+      border: $border-width solid $color-dark-gray;
+    }
+  }
 }
 
 .img-homepage-btns-container {
@@ -80,5 +94,20 @@
     height: 100%;
     width: 100%;
     object-fit: fit;
+  }
+}
+
+.dark-btn-two {
+  background-color: $color-yellow;
+  color: $color-dark-gray;
+  &:hover {
+    border: $border-width solid $color-off-white;
+  }
+}
+.light-btn-two {
+  background-color: $color-british-racing-green;
+  color: $color-off-white;
+  &:hover {
+    border: $border-width solid $color-dark-gray;
   }
 }

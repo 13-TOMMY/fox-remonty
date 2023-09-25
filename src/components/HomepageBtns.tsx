@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
-import { AiOutlineDownload } from "react-icons/ai";
-import { GrFormView } from 'react-icons/gr'
+import { AiOutlineDownload, AiOutlineEye } from "react-icons/ai";
 import { motion } from "framer-motion";
 import Language from "./parts/Language";
 import businessCard from "../assets/business-card/business-card.png";
@@ -14,9 +13,9 @@ function HomepageBtns() {
   const scrollToTopAndNavigate = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
-    navigate('/projects');
+    navigate("/projects");
   };
 
   return (
@@ -41,9 +40,7 @@ function HomepageBtns() {
               whileHover={{ scale: 1.2 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
               className={
-                darkMode
-                  ? `dark-btn download-btn  l-font`
-                  : `light-btn download-btn  l-font`
+                darkMode ? ` download-btn bv-btn-dark l-font` : ` download-btn bv-btn-light l-font`
               }
             >
               <a href={businessCard} download>
@@ -69,13 +66,9 @@ function HomepageBtns() {
               initial={{ scale: 1 }}
               whileHover={{ scale: 1.2 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              className={
-                darkMode
-                  ? `dark-btn view-btn l-font`
-                  : `light-btn view-btn l-font`
-              }
+              className={darkMode ? ` view-btn bv-btn-dark l-font` : `  view-btn bv-btn-light l-font`}
             >
-              <GrFormView/>
+              <AiOutlineEye />
             </motion.button>
           </div>
         </div>
