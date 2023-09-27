@@ -7,7 +7,7 @@
   .banner-img {
     animation: banner-img 1.2s cubic-bezier(0.7, 0, 0.84, 0) 0.5s 1 normal none;
     width: 800px;
-    overflow: hidden;
+    
     @include tablet {
       width: 700px;
     }
@@ -21,6 +21,7 @@
     height: 200px;
     width: 800px;
     height: fit-content;
+    overflow: hidden;
     animation: banner-title 1s cubic-bezier(0.7, 0, 0.84, 0) 0.5s 1 normal none;
     @include tablet {
       width: 500px;
