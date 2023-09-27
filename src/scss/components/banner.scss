@@ -1,6 +1,55 @@
 .banner-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  .banner-img {
+    animation: banner-img 1.2s cubic-bezier(0.7, 0, 0.84, 0) 0.5s 1 normal none;
+    width: 800px;
+    @include tablet {
+      width: 700px;
+    }
+    @include mobile {
+      width: 90%;
+    }
   }
-  
-  
+  .banner-text {
+    z-index: 999;
+    position: absolute;
+    height: 200px;
+    width: 800px;
+    height: fit-content;
+    animation: banner-title 1s cubic-bezier(0.7, 0, 0.84, 0) 0.5s 1 normal none;
+    @include tablet {
+      width: 500px;
+    }
+    @include mobile {
+      width: 90%;
+    }
+  }
+}
+
+@keyframes banner-title {
+  0% {
+    opacity: 0;
+    transform: translateY(350px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes banner-img {
+  0% {
+    opacity: 0;
+    transform: translateY(-350px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
