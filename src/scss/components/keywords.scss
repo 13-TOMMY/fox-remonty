@@ -7,7 +7,6 @@
 .marquee {
   display: flex;
   align-items: center;
-  gap: 1rem;
   position: relative;
   user-select: none;
   .marquee-content {
@@ -44,8 +43,8 @@
 }
 
 .scroll {
-  animation: scroll 30s linear infinite;
+  animation: scroll 20s linear infinite;
   @include mobile {
-    animation: scroll 50s linear infinite;
+    animation: scroll 30s linear infinite;
   }
 }
