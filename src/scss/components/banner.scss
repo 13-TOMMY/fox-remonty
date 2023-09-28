@@ -7,7 +7,7 @@
   .banner-img {
     animation: banner-img 1.2s cubic-bezier(0.7, 0, 0.84, 0) 0.5s 1 normal none;
     width: 800px;
-    
+
     @include tablet {
       width: 700px;
     }
@@ -18,17 +18,21 @@
   .banner-text {
     z-index: 999;
     position: absolute;
-    height: 200px;
-    width: 800px;
-    height: fit-content;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
+    font-size: 102px;
     animation: banner-title 1s cubic-bezier(0.7, 0, 0.84, 0) 0.5s 1 normal none;
     @include tablet {
-      width: 500px;
+      font-size: 88;
     }
     @include mobile {
       width: 90%;
     }
+  }
+  .banner-text-light {
+    color: #fff;
+    text-shadow: 1px 4px 15px rgba(0, 66, 37, 1);
   }
 }
 
