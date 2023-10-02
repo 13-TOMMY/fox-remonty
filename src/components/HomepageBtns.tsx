@@ -57,8 +57,8 @@ function HomepageBtns() {
           >
             <h3 className={darkMode ? "dark-text l-font" : "light-text l-font"}>
               <Language
-                englishText={`Find Out More`}
-                polishText={`Dowiedz Się Więcej`}
+                englishText={`Find Out`}
+                polishText={`Dowiedz Się`}
               />
             </h3>
             <motion.button
