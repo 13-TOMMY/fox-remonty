@@ -22,30 +22,26 @@ function About() {
           </h3>
           <p className={darkMode ? "dark-text" : "light-text"}>
             <Language
-              englishText={`Welcome to Fox Remonty, Where Sławomir's Expertise Transforms Your Space!`}
-              polishText={`Witaj w Fox Remonty, Gdzie Ekspertyza Sławomira Przemienia Twój Przestrzeń!`}
+              englishText={`Welcome to Fox Remonty, Where my expertise will transform your Space!`}
+              polishText={`Witaj w Fox Remonty, gdzie moja ekspertyza przemieni Twoją Przestrzeń!`}
             />
           </p>
           <p className={darkMode ? "dark-text" : "light-text"}>
             <Language
-              englishText={`With a legacy of over two decades in the construction industry, Sławomir brings his wealth of experience from London, England, to Poland. At Fox Remonty, we specialise in plastering, painting, and general renovations, ensuring that your home or business receives top-notch craftsmanship with every project.
-`}
-              polishText={`Z ponad dwudziestoletnim doświadczeniem w branży budowlanej Sławomir przynosi swoje bogate doświadczenie z Londynu, Anglia, do Polski. W Fox Remonty specjalizujemy się w tynkowaniu, malowaniu oraz ogólnych remontach, zapewniając, że każdy projekt w Twoim domu lub firmie otrzymuje najwyższą jakość rzemiosła.
-              `}
+              englishText={`With more than 20 years of experience in the construction industry, he specializes in plastering, painting and general renovations, ensuring that every project in your home or business receives the highest quality craftsmanship.`}
+              polishText={`Z ponad dwudziestoletnim doświadczeniem w branży budowlanej specjalizuje się w tynkowaniu, malowaniu oraz ogólnych remontach, zapewniając, że każdy projekt w Twoim domu lub firmie otrzymuje najwyższą jakość rzemiosła.`}
             />
           </p>
           <p className={darkMode ? "dark-text" : "light-text"}>
             <Language
-              englishText={`Sławomir's commitment to quality and dedication to his craft have earned him a reputation for excellence. He understands that your space is a reflection of your lifestyle, and every project is a unique opportunity to create something truly exceptional. Whether you desire a fresh coat of paint, flawless plasterwork, or a complete renovation, Sławomir and his team are here to make your vision a reality.
-`}
-              polishText={`Zobowiązanie do jakości i oddanie swojemu fachu przyniosły Sławomirowi reputację doskonałości. Rozumie, że Twoja przestrzeń odzwierciedla Twój styl życia, a każdy projekt to wyjątkowa okazja do stworzenia czegoś naprawdę wyjątkowego. Czy potrzebujesz świeżej warstwy farby, bezbłędnej pracy tynkarza czy też kompleksowego remontu, Sławomir i jego zespół są tutaj, aby zrealizować Twoją wizję.
-              `}
+              englishText={`A commitment to quality and dedication to my craft have earned me a reputation for excellence. I understand that your space reflects your lifestyle, and every project is a unique opportunity to create something truly special. Whether you need a fresh coat of paint, a flawless plaster job or a comprehensive renovation I am here to make your vision a reality.`}
+              polishText={`Zobowiązanie do jakości i oddanie swojemu fachu przyniosły mi reputację i doskonałości. Rozumiem że Twoja przestrzeń odzwierciedla Twój styl życia, a każdy projekt to wyjątkowa okazja do stworzenia czegoś naprawdę wyjątkowego. Czy potrzebujesz świeżej warstwy farby, bezbłędnej pracy tynkarza czy też kompleksowego remontu jestem tutaj, aby zrealizować Twoją wizję.`}
             />
           </p>
           <p className={darkMode ? "dark-text" : "light-text"}>
             <Language
-              englishText={`Discover the difference that comes with choosing Fox Remonty for your construction needs. Contact us today and let Sławomir's passion and expertise transform your space into something extraordinary. Your dream space is just a project away with Fox Remonty.`}
-              polishText={`Odkryj różnicę, jaką przynosi wybór Fox Remonty na potrzeby budowlane. Skontaktuj się z nami jeszcze dziś i pozwól pasji i ekspertyzie Sławomira przekształcić Twoją przestrzeń w coś nadzwyczajnego. Twoja wymarzona przestrzeń jest w zasięgu ręki dzięki Fox Remonty.`}
+              englishText={`Discover the difference that choosing Fox Renovations for your construction needs brings. Contact me today and let passion and expertise transform your space into something extraordinary. Your dream space is within reach. `}
+              polishText={`Odkryj różnicę, jaką przynosi wybór Fox Remonty na potrzeby budowlane. Skontaktuj się z mną jeszcze dziś i pozwól pasji i ekspertyzie przekształcić Twoją przestrzeń w coś nadzwyczajnego. Twoja wymarzona przestrzeń jest w zasięgu ręki.`}
             />
           </p>
         </div>
