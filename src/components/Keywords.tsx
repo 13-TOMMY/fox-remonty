@@ -17,10 +17,10 @@ function Keywords() {
         >
           <Language
             englishText={
-              "Reliable | Quick | Affordable | Fast | Professional | Experience | Quality | Affordable | Trusted"
+              "Reliable| Fast | Efficient | Professional | Experienced | High Quality | Affordable | Trustworthy."
             }
             polishText={
-              "Wiarygodny | Szybko | Tanio | Efektywny | Profesjonalny | Doświadczony | Wysoka jakość | Przystępny cenowo | Godny zaufania"
+              "Wiarygodny| Szybko | Efektywny | Profesjonalny | Doświadczony | Wysoka Jakość | Przystępny Cenowo | Godny zaufania"
             }
           />
         </div>

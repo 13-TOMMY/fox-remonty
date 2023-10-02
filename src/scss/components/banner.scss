@@ -16,22 +16,30 @@
     }
   }
   .banner-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 999;
     position: absolute;
-
-    overflow: hidden;
-    font-size: 102px;
+    font-weight: 700;
+    font-size: 122px;
     animation: banner-title 1s cubic-bezier(0.7, 0, 0.84, 0) 0.5s 1 normal none;
     @include tablet {
-      font-size: 88;
+      font-size: 88px;
     }
     @include mobile {
+      font-weight: 500;
+      font-size: 52px;
       width: 90%;
     }
   }
   .banner-text-light {
     color: #fff;
     text-shadow: 1px 4px 15px rgba(0, 66, 37, 1);
+  }
+  .banner-text-dark {
+    color: #000000;
+    text-shadow: 1px 4px 20px rgb(202, 195, 0);
   }
 }
 
