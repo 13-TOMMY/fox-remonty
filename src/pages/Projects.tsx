@@ -14,7 +14,6 @@ function Projects() {
     // "/imgs/Plastering/IMG_7195.jpeg",
     // "/imgs/Plastering/IMG_7196.jpeg",
     // "/imgs/Plastering/IMG_7200.jpeg",
-
   ];
   const imgSetTwo: string[] = [
     "/imgs/Painting/IMG_0419.jpeg",
@@ -72,8 +71,8 @@ function Projects() {
           <div className="p-text-project-two">
             <p className={darkMode ? "dark-text s-font" : "light-text s-font"}>
               <Language
-                englishText={`Painting is the art of adding color and life to your spaces. Our skilled painters bring expertise and creativity to every project. Whether it's refreshing a room's appearance, creating stunning decorative finishes, or restoring the beauty of your walls, we deliver outstanding results. We take pride in transforming your spaces with precision and flair.`}
-                polishText={`Malowanie to sztuka dodawania koloru i życia Twoim przestrzeniom. Nasi wykwalifikowani malarze przynoszą do każdego projektu swoje umiejętności i kreatywność. Czy to odświeżanie wyglądu pomieszczeń, tworzenie zachwycających efektów dekoracyjnych czy też przywracanie piękna Twoim ścianom, dostarczamy wyjątkowych rezultatów. Jesteśmy dumni z przekształcania Twoich przestrzeni z precyzją i fantazją.`}
+                englishText={`Painting is the art of adding colour and life to your spaces. Whether it's refreshing the look of a room, creating stunning decorative effects or restoring beauty to your walls, we deliver exceptional results. I take pride in transforming your spaces with precision and imagination.`}
+                polishText={`Malowanie to sztuka dodawania koloru i życia Twoim przestrzeniom. Czy to odświeżanie wyglądu pomieszczeń, tworzenie zachwycających efektów dekoracyjnych czy też przywracanie piękna Twoim ścianom, dostarczamy wyjątkowych rezultatów. Jestem dumny z przekształcania Twoich przestrzeni z precyzją i fantazją.`}
               />
             </p>
           </div>
@@ -99,8 +98,8 @@ function Projects() {
           <div className="p-text-project-three">
             <p className={darkMode ? "dark-text s-font" : "light-text s-font"}>
               <Language
-                englishText={`Renovations breathe new life into your spaces, and our expert team is dedicated to revitalizing your surroundings. From comprehensive remodeling projects to meticulous restorations, we bring a wealth of experience and craftsmanship to every job. Whether it's transforming a dated interior, enhancing functionality, or preserving the historical charm of a property, we take pride in delivering exceptional renovation solutions that meet your unique needs and preferences.`}
-                polishText={`Remonty ożywiają Twoje przestrzenie, a nasz doświadczony zespół jest oddany ożywianiu Twojego otoczenia. Od kompleksowych projektów remontowych po staranne renowacje, przynosimy ogromne doświadczenie i rzemieślniczą precyzję do każdej pracy. Czy to transformacja przestarzałego wnętrza, zwiększanie funkcjonalności czy zachowywanie historycznego uroku nieruchomości, jesteśmy dumni z dostarczania wyjątkowych rozwiązań remontowych, które spełniają Twoje unikalne potrzeby i preferencje.`}
+                englishText={`Renovations bring your spaces to life and my expertise is dedicated to bringing your surroundings to life. From complex renovation projects to careful restorations, I bring a wealth of experience and craftsmanship to every job. Whether it's transforming an outdated interior, enhancing functionality or preserving a property's historic charm, I take pride in delivering exceptional renovation solutions that meet your unique needs and preferences.`}
+                polishText={`Remonty ożywiają Twoje przestrzenie, a moje doświadczenie  jest oddane ożywianiu Twojego otoczenia. Od kompleksowych projektów remontowych po staranne renowacje, przynoszę ogromne doświadczenie i rzemieślniczą precyzję do każdej pracy. Czy to transformacja przestarzałego wnętrza, zwiększanie funkcjonalności czy zachowywanie historycznego uroku nieruchomości, jestem  dumny z dostarczania wyjątkowych rozwiązań remontowych, które spełniają Twoje unikalne potrzeby i preferencje.`}
               />
             </p>
           </div>
