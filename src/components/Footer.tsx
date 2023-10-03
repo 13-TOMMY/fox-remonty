@@ -23,8 +23,8 @@ function Footer() {
           }
         >
           <Language
-            englishText={`DESIGNED AND PROGRAMMED BY:`}
-            polishText={`ZAPROJEKTOWANE I ZAPROGRAMOWANE PRZEZ:`}
+            englishText={`CREATED BY:`}
+            polishText={`STWORZONY PRZEZ:`}
           />
         </div>
         <motion.a
