@@ -29,13 +29,13 @@ function About() {
           <p className={darkMode ? "dark-text" : "light-text"}>
             <Language
               englishText={`With more than 20 years of experience in the construction industry, he specializes in plastering, painting and general renovations, ensuring that every project in your home or business receives the highest quality craftsmanship.`}
-              polishText={`Z ponad dwudziestoletnim doświadczeniem w branży budowlanej specjalizuje się w tynkowaniu, malowaniu oraz ogólnych remontach, zapewniając, że każdy projekt w Twoim domu lub firmie otrzymuje najwyższą jakość rzemiosła.`}
+              polishText={`Z ponad dwudziestoletnim doświadczeniem w branży budowlanej specjalizuje się w gładzi, malowaniu oraz ogólnych remontach, zapewniając, że każdy projekt w Twoim domu lub firmie otrzymuje najwyższą jakość rzemiosła.`}
             />
           </p>
           <p className={darkMode ? "dark-text" : "light-text"}>
             <Language
               englishText={`A commitment to quality and dedication to my craft have earned me a reputation for excellence. I understand that your space reflects your lifestyle, and every project is a unique opportunity to create something truly special. Whether you need a fresh coat of paint, a flawless plaster job or a comprehensive renovation I am here to make your vision a reality.`}
-              polishText={`Zobowiązanie do jakości i oddanie swojemu fachu przyniosły mi reputację i doskonałości. Rozumiem że Twoja przestrzeń odzwierciedla Twój styl życia, a każdy projekt to wyjątkowa okazja do stworzenia czegoś naprawdę wyjątkowego. Czy potrzebujesz świeżej warstwy farby, bezbłędnej pracy tynkarza czy też kompleksowego remontu jestem tutaj, aby zrealizować Twoją wizję.`}
+              polishText={`Zobowiązanie do jakości i oddanie swojemu fachu przyniosły mi reputację i doskonałości. Rozumiem że Twoja przestrzeń odzwierciedla Twój styl życia, a każdy projekt to wyjątkowa okazja do stworzenia czegoś naprawdę wyjątkowego. Czy potrzebujesz świeżej warstwy farby, bezbłędnej pracy gładzi czy też kompleksowego remontu jestem tutaj, aby zrealizować Twoją wizję.`}
             />
           </p>
           <p className={darkMode ? "dark-text" : "light-text"}>

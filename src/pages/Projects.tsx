@@ -42,7 +42,7 @@ function Projects() {
             <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
               <Language
                 englishText={`PLASTERING`}
-                polishText={`PLASTROWANIE`}
+                polishText={`Gładź (Angielska gładź, Plaster)`}
               />
             </h3>
           </div>
@@ -50,7 +50,7 @@ function Projects() {
             <p className={darkMode ? "dark-text s-font" : "light-text s-font"}>
               <Language
                 englishText={`Plastering is the foundation of a strong and visually appealing finish in construction and renovation. Our experienced team excels in this art, using high-quality materials and modern techniques to ensure durability and beauty. Whether it's repairing walls, preparing surfaces for paint, or enhancing interiors, we provide precision and professionalism. With a focus on both new construction and renovations, we transform walls and ceilings, creating lasting and elegant spaces that reflect your unique style and needs`}
-                polishText={`Plastrowanie to fundament trwałego i estetycznego wykończenia w budownictwie i renowacji. Nasz doświadczony zespół doskonale się w tym sprawdza, używając wysokiej jakości materiałów i nowoczesnych technik, zapewniając trwałość i piękno. Czy to naprawa ścian, przygotowanie powierzchni do malowania czy też poprawa wnętrz, zapewniamy precyzję i profesjonalizm. Skupiając się zarówno na nowych budowlach, jak i renowacjach, przekształcamy ściany i sufity, tworząc trwałe i eleganckie przestrzenie, które odzwierciedlają Twój wyjątkowy styl i potrzeby.
+                polishText={`Gładź (Plaster) to fundament trwałego i estetycznego wykończenia w budownictwie i renowacji. Nasz doświadczony zespół doskonale się w tym sprawdza, używając wysokiej jakości materiałów i nowoczesnych technik, zapewniając trwałość i piękno. Czy to naprawa ścian, przygotowanie powierzchni do malowania czy też poprawa wnętrz, zapewniamy precyzję i profesjonalizm. Skupiając się zarówno na nowych budowlach, jak i renowacjach, przekształcamy ściany i sufity, tworząc trwałe i eleganckie przestrzenie, które odzwierciedlają Twój wyjątkowy styl i potrzeby.
                 `}
               />
             </p>
