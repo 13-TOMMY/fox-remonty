@@ -6,24 +6,19 @@ import Carousel from "../components/Carousel";
 function Projects() {
   const { darkMode } = useContext(ThemeContext);
   const imgSetOne: string[] = [
+    "/imgs/Plastering/IMG_7200.jpeg",
     "/imgs/Plastering/AEE178EF-84A5-49F6-BFE0-8743038BD88A.jpeg",
-    "/imgs/Plastering/IMG_0052.jpeg",
-    "/imgs/Plastering/IMG_4224.jpeg",
-    // "/imgs/Plastering/IMG_7190.jpeg",
-    // "/imgs/Plastering/IMG_4224.jpeg",
-    // "/imgs/Plastering/IMG_7195.jpeg",
-    // "/imgs/Plastering/IMG_7196.jpeg",
-    // "/imgs/Plastering/IMG_7200.jpeg",
+    "/imgs/Plastering/IMG_7196.jpeg",
   ];
   const imgSetTwo: string[] = [
+    "/imgs/Painting/painting2.jpeg",
     "/imgs/Painting/IMG_0419.jpeg",
-    "/imgs/Painting/IMG_1256.jpeg",
-    "/imgs/Painting/IMG_1259.jpeg",
+    "/imgs/Painting/painting.jpeg",
   ];
   const imgSetThree: string[] = [
     "/imgs/Renovations/IMG_7338.jpeg",
+    "/imgs/Renovations/renovations.jpeg",
     "/imgs/Renovations/IMG_7354.jpeg",
-    "/imgs/Renovations/IMG_7360.jpeg",
   ];
   return (
     <div className="project-container">
